@@ -23,7 +23,7 @@ new Vue({
           cover: "img/4390-cranberries-zombie.jpg",
           source: "mp3/zombieanswers.mp3",
           url: "https://www.youtube.com/watch?v=6Ejga4kJUts",
-          favorited: true
+          favorited: false
         },
         {
           name: "Coconut",
