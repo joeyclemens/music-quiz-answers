@@ -71,22 +71,26 @@ body {
   z-index: 1;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
-
-    .player-cover {
-      margin-top: -70px;
-      margin-bottom: 25px;
-      width: 100%; /* Adjusted width */
-      max-width: 290px; /* Maximum width */
-      height: auto; /* Adjusted height to maintain aspect ratio */
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .player-cover__item {
-      height: 0; /* This ensures aspect ratio */
-      padding-top: 100%; /* Adjusts height based on width for square aspect ratio */
-    }
-
-  
+  .player-cover {
+    margin-top: -70px;
+    margin-bottom: 25px;
+    width: 290px;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.player-cover__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .player-cover__item:before {
   content: "";
   background: inherit;
